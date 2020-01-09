@@ -1,0 +1,19 @@
+<h1>Welcome to startup world</h1>
+<h3>List of startups</h3>
+<div class="col-md-6 mx-auto">
+	<table class="table table-striped">
+		<thead>
+			<th>Name</th>
+			<th>Country</th>
+		</thead>
+		<tbody>
+			{{#each data}}
+			<tr>
+				<td>{{this.name}}</td>
+				<td>{{this.country}}</td>
+			</tr>
+			{{/each}}
+		</tbody>
+	</table>
+    <button onclick="location.href = '/create'">Create new</button>
+</div>
